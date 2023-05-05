@@ -3,13 +3,7 @@ const input = document.querySelector("input");
 const form = document.querySelector("form");
 const container = document.getElementById("container");
 
-
-
-
-
 container.addEventListener("click", (eo) => {
-
-  
   switch (eo.target.className) {
     case "icon-trash icon":
       eo.target.parentElement.parentElement.remove();
@@ -49,7 +43,6 @@ container.addEventListener("click", (eo) => {
     case "icon-star icon orange":
       eo.target.classList.remove("orange");
       break;
- 
   }
 });
 
